@@ -49,11 +49,29 @@ img {
     max-width: 100%;
 }
 
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    max-width: 100%;
+    position: relative; 
+    background-color: hsl(178, 100%, 50%);
+}
+
+img.overlay {
+    position: absolute; 
+    width: 15%;
+    bottom: 100px;
+    left: 105px;
+}
+
+
 h1 {
     color: hsl(0, 0%, 100%);
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
 }
 
 h2 {
@@ -109,9 +127,8 @@ aside.clock h3 {
 
 hr {
     border: none;
-    background-color: hsl(215, 51%, 70%);;
+    background-color: hsl(215, 32%, 27%);
     height: 1px;
-    opacity: 50%;
     margin-bottom: 0;
 }
 
@@ -119,7 +136,6 @@ div.profile {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 div.profile img {
@@ -150,4 +166,15 @@ footer {
     font-size: 0.6em;
     color: hsl(0, 0%, 100%); 
     font-weight: 300;
+}
+
+a:hover {
+    h1, p {
+        color: hsl(178, 100%, 50%);
+    }
+
+    img {
+        opacity: 50%;
+    }
+
 }
