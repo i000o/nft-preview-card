@@ -36,9 +36,9 @@
 -
 -
 
-## Time taken
+## Time taken :alarm_clock:
 
-- Mobile: 3 hrs
+- Mobile: 1 hr
 - Desktop:
 
 ## Feedback
@@ -52,4 +52,5 @@
 :grey_exclamation:
 
 ## Useful resources
+
 # nft-preview-card

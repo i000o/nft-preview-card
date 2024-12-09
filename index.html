@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="styles.css" rel="stylesheet"> 
   <title>Frontend Mentor | NFT preview card component</title>
-  
+
 </head>
 <body>
   <main> 
     <section> 
+
+      <img src="images/image-equilibrium.jpg" alt="equilibrium card image"> 
+
       <h1> 
         Equilibrium #3429
       </h1>
@@ -20,26 +23,37 @@
         Our Equilibrium collection promotes balance and calm.
       </h2>
 
-      <h3> 
-        0.041 ETH
-      </h3>
+      <div>
+        <aside class="eth"> 
+          <img src="images/icon-ethereum.svg" alt="ethereum icon"> 
+          <h3> 
+            0.041 ETH
+          </h3>
+        </aside>
 
-      <h3> 
-        3 days left
-      </h3>
+        <aside class="clock"> 
+          <img src="images/icon-clock.svg" alt="clock icon"> 
+          <h3> 
+            3 days left
+          </h3>
+        </aside>
+      </div>
 
-      <br> 
+      <hr> 
 
-      <h4> 
-        Creation of Jules Wyvern
-      </h4>
+      <div class="profile"> 
+        <h4> 
+          Creation of <p>Jules Wyvern<p>
+        </h4>
+        <img src="images/image-avatar.png" alt="profile avatar"> 
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Iman Osman</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor </a>. 
+      Coded by<a href="#"> Iman Osman </a>.
     </div>
   </footer>
 </body>

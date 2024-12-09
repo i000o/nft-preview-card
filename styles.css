@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* RESETS */ 
+
+a:link {
+    color: inherit; /* no blue default link color */ 
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit; /* no purple visited links */ 
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* GLOBALS */ 
+
+body {
+    display: flex; 
+    flex-direction: column;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'outfit', sans-serif;
+    font-weight: 300, 400, 600; 
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: hsl(216, 50%, 16%);
+    margin: 20px;
+    margin-bottom: 5px;
+    border-radius: 16px;
+    padding: 20px;
+    padding-bottom: 5px;
+    max-width: 18em;
+    height: auto;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    max-width: 100%;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+h2 {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300; 
+    font-size: 0.8em;
+    line-height: 170%;
+    margin-bottom: 5px;
+}
+
+div {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside.eth {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+}
+
+aside.eth img {
+    display: inline-block;
+    max-width: 10%;
+}
+
+aside.eth h3 {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400; 
+    font-size: 0.8em;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+aside.clock {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+aside.clock img {
+    display: inline-block;
+    max-width: 30%;
+}
+
+aside.clock h3 {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300; 
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+hr {
+    border: none;
+    background-color: hsl(215, 51%, 70%);;
+    height: 1px;
+    opacity: 50%;
+    margin-bottom: 0;
+}
+
+div.profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+div.profile img {
+    display: inline-block;
+    max-width: 10%;
+    border: 1px solid hsl(0, 0%, 100%);
+    order: -1; /* I'm so good at this now */ 
+    margin: 0;
+}
+
+h4 {
+    font-size: 0.8em;
+    font-weight: 400; 
+    color: hsl(215, 51%, 70%);
+    margin: 10px;
+}
+
+h4 p {
+    color:hsl(0, 0%, 100%);
+    display: inline-block;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 0.6em;
+    color: hsl(0, 0%, 100%); 
+    font-weight: 300;
+}
