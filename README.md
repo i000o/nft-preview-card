@@ -36,10 +36,43 @@
 -
 -
 
+```
+      <!-- <a href=#>
+        <div class="container">
+        <img src="images/image-equilibrium.jpg" alt="equilibrium card image">
+      </a>
+        <div>
+        <img class="overlay" src="images/icon-view.svg" alt="view image icon">
+        </div>
+      </div> -->
+```
+
+```
+
+/* div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    max-width: 100%;
+    position: relative;
+    background-color: hsl(178, 100%, 50%);
+    z-index: ;
+} */
+
+/* img.overlay {
+    position: absolute;
+    width: 15%;
+    bottom: 100px;
+    left: 105px;
+    z-index: 0;
+} */
+```
+
 ## Time taken :alarm_clock:
 
 - Mobile: 1 hr
-- Desktop:
+- Desktop: 3hrs - Learning hover states with icon overlay
 
 ## Feedback
 
@@ -52,5 +85,8 @@
 :grey_exclamation:
 
 ## Useful resources
+
+https://dev.to/sanchithasr/how-to-overlay-icons-on-top-of-images-with-css-1kb9
+https://discord.com/channels/824970620529279006/1123196742465232937
 
 # nft-preview-card
