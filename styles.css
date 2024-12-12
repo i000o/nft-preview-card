@@ -18,6 +18,12 @@ a:visited {
   box-sizing: border-box;
 }
 
+button {
+    background-color: inherit; /* remove button default styling */ 
+    border: none; /* remove button default styling */ 
+}
+
+
 /* GLOBALS */ 
 
 body {
@@ -42,54 +48,47 @@ section {
 }
 
 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
+    display: block;
     max-width: 100%;
+    border-radius: 16px;
 }
-/* 
-a.container {
+
+button {
     display: block;
     position: relative;
 }
 
-a.container img {
-    display: block;
-    max-width: 100%;
-}
-
-a.container::before, ::after {
+button::before, button::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0;
-}
+    opacity: 0; 
+} 
 
-a.container::before {
+ button::before { /* cyan */ 
     background-color: hsl(178, 100%, 50%);
     border-radius: 16px;
-    z-index: -2;
+    left: 0;
 }
 
-a.container::after {
-    background-image: url(/images/icon-view.svg);
+
+button::after { /* eye */ 
+    background-image: url(images/icon-view.svg); /*the path was wrong - that's why it wasn't showing up */ 
     background-repeat: no-repeat;
-    z-index: -1;
-}
+    background-size: 15%;
+    height: 60%;
+    top: 41%;
+    left: 43%;
+    transition: opacity 0.4s;
+}  
 
-a.container:hover::before {
+button:hover::before { /* pseudo class comes first */ 
     opacity: 0.7;
-}
+} 
 
-a.container:hover::after {
-    opacity: 1; 
-} */
-
-img.equilibrium {
-    display: block;
-    max-width: 100%;
+button:hover::after {
+    opacity: 1;
 }
 
 h1 {
@@ -171,6 +170,7 @@ div.profile img {
     display: inline-block;
     max-width: 10%;
     border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 16px;
     order: -1; /* I'm so good at this now */ 
     margin: 0;
 }

@@ -32,7 +32,19 @@
 
 ## My process
 
--
+- img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  max-width: 100%;
+  }
+
+img.equilibrium {
+display: block;
+max-width: 100%;
+}
+
 -
 -
 
@@ -88,5 +100,9 @@
 
 https://dev.to/sanchithasr/how-to-overlay-icons-on-top-of-images-with-css-1kb9
 https://discord.com/channels/824970620529279006/1123196742465232937
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context#
+https://blog.hubspot.com/website/z-index
+
+BUTTON??????? NOT ANCHOR
 
 # nft-preview-card
